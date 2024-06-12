@@ -368,10 +368,9 @@
                                     <!-- Example combined Data Analysis and Documentation skill icon with text -->
                                     <div class="combined-skill">
                                         <i class="fas fa-chart-bar" ></i> 
-                                        <i class="fas fa-file-alt"></i>
-                                        Documentation
+                                        <i class="fas fa-file-alt"></i>Documentation
                                     </div>
-                                
+                                    
                                     <!-- Other body content -->
                                 </body>
                                 
@@ -408,100 +407,164 @@
     </section>
     <!-- Expertise End -->
 
-
-
-    <!-- Projects Start -->
-    <div class="container-xxl py-6 pt-5" id="project">
-        <div class="container">
-            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Projects</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+    
+            .project-container {
+                width: 90%;
+                margin: 0 auto;
+            }
+    
+            .project-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 50px;
+            }
+    
+            .project-header h1 {
+                font-size: 50px;
+            }
+    
+            .project-nav {
+                display: flex;
+                gap: 20px;
+            }
+    
+            .project-nav a {
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+                border-bottom: 2px solid transparent;
+            }
+    
+            .project-nav a.active-project {
+                border-bottom: 2px solid black;
+            }
+    
+            .project-content {
+                margin-top: 30px;
+            }
+    
+            .project-content > div {
+                display: none;
+            }
+    
+            .project-content > div.active-project {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-xxl py-6 pt-5" id="project">
+        <div class="project-container">
+            <div class="project-header">
+                <!-- <h1>My Projects</h1> -->
                 <div class="col-lg-6">
                     <h1 class="display-5 mb-0">My Projects</h1>
                 </div>
-                <!-- <div class="col-lg-6 text-lg-end">
-                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
-                        <li class="mx-3 active" data-filter="*">All Projects</li>
-                        <li class="mx-3" data-filter=".first">Fabricated</li>
-                        <li class="mx-3" data-filter=".second">Design</li>
-                    </ul>
-                </div> -->
+                <div class="project-nav">
+                    <a href="#" id="all-projects-link" class="active-project">All Projects</a>
+                    <a href="#" id="fabricated-link">Fabricated</a>
+                    <a href="#" id="design-link">Design</a>
+                </div>
             </div>
-            <!-- <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-12 col-md-6 mx-auto portfolio-item first"> -->
-                    <div class="infographic-container">
-                        <div class="main-image">
-                            <h2 style="text-align: left;">Three Wheeler Hybrid Car</h2>
-                            <img class="img-fluid rounded shake preview-image"  src="img/car1.jpg" alt="Three Wheeler Hybrid Car Side">
-                        </div>
-                        <div class="supporting-images">
-                            <div class="supporting-image">
-                                <img class="img-fluid rounded shake preview-image"  src="img/car2.jpg" alt="Three Wheeler Hybrid Car Front">
-                            </div>
-                            <div class="supporting-image">
-                                <img class="img-fluid rounded shake preview-image"  src="img/Sathi.jpg" alt="Three Wheeler Hybrid Car">
-                            </div>
-                        </div>
-                        <p style="text-align: center;">Three Wheeler Hybrid Car</p>
-                        <div class="supporting-images">
-                            <div class="supporting-image">
-                                <img class="img-fluid rounded shake preview-image"  src="img/wave1.jpg" alt="Three Wheeler Hybrid Car Front">
-                            </div>
-                            <div class="supporting-image">
-                                <img class="img-fluid rounded shake preview-image"  src="img/wave2.jpg" alt="Three Wheeler Hybrid Car">
-                            </div>
-                        </div>
-                        <p style="text-align: center;">Wave Magazine, February 2019</p>
-                        <div class="video-container">
-                            <video controls>
-                                <source src="img/Video CAN-InfoTech.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <p style="text-align: center;">CAN-InfoTech, 2019</p>
-                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
-                        <ul>
-                            <li style="text-align: justify;">Developed a versatile three-wheeler hybrid car capable of operating in both petrol and electric modes.</li>
-                            <li style="text-align: justify;">Integrated a 125cc 4-stroke bike engine alongside a 750W BLDC motor, allowing users to choose between traditional combustion power and eco-friendly electric propulsion based on preference and driving conditions.</li>
-                        </ul>
+    
+            <div class="project-content">
+                <div id="all-projects" class="active-project">
+                    <!-- Content for All Projects -->
+                    <h2>All Projects</h2>
+                    <div id="all-projects-content">
+                        <!-- This is where content for all projects will go, including Fabricated and Design -->
                     </div>
-
-                    <div class="infographic-container">
-                        <div class="main-image">
-                            <h2 style="text-align: left;">E-Bike</h2>
-                            <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-Photo-3-Dhankuta.jpg" alt="E-Bike">
-                        </div>
-                        <div class="supporting-images">
-                            <div class="supporting-image">
-                                <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-baba.jpg" alt="Three Wheeler Hybrid Car Front">
+                </div>
+                <div id="fabricated">
+                    <!-- Content for Fabricated -->
+                    <h2>Fabricated Projects</h2>
+                    <div id="fabricated-content">
+                        
+                        <div class="infographic-container">
+                            <div class="main-image">
+                                <h2 style="text-align: left;">E-Bike</h2>
+                                <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-Photo-3-Dhankuta.jpg" alt="E-Bike">
                             </div>
-                            <div class="supporting-image">
-                                <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-mummy1.jpg" alt="Three Wheeler Hybrid Car">
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-baba.jpg" alt="Three Wheeler Hybrid Car Front">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-mummy1.jpg" alt="Three Wheeler Hybrid Car">
+                                </div>
                             </div>
+                            <p style="text-align: center;">E-Bike</p>
+                            <div class="main-image" style="width: full; display: flex; align-items: center; justify-items: center;">
+                                <img class="img-fluid rounded shake preview-image"  src="img/bike/newspaper.jpg" alt="E-Bike">
+                            </div>
+                            <p style="text-align: center;">Rajdhani, 24 Jun 2017</p>
+                            <div class="video-container">
+                                <video controls >
+                                    <source src="img/bike/WhatsApp Video 2024-05-20 at 16.04.49.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div style="text-align: center;"">
+                                <a href="https://www.youtube.com/watch?v=J2hBY7EWV_A&list=PLaFdG6FUHktbW0NTRYpxfnDKQVRCMYRUQ", target="_blank">Sagarmatha Tv, 23 Jun 2017</a>
+                            </div>
+                            <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                            <ul>
+                                <li style="text-align: justify;">Fabricated a robust chassis to ensure durability and safety, employing hands-on fabrication techniques.</li>
+                                <li style="text-align: justify;">Integrated a 48V 500W brushless hub motor and compatible controller, achieving smooth propulsion and enabling a top speed of 40 km/hr with a mileage of 40-60 km/hr.</li>
+                            </ul>
+                            <a href="https://sangalokhabar.com/6771?fbclid=IwZXh0bgNhZW0CMTEAAR36aUHk7YO3XYAAlhQCbeVjkvkpWEyfptLSTsi_ufBMSOHCeOYR7pCHUUI_aem_AXW6EwkMF-jncrRNFyHAPwGSBQR-gdSdUQ4BJCxBIrOm7snfQ--fzX6DCSdsHN6oBIcXYx79zhpDH6Hz8xL6v9fL" target="_blank" style="color: blue; margin-left: 15px;">Newspaper Sangalokhabar</a>
+                           
+                        </div> 
+    
+                        <div class="infographic-container">
+                            <div class="main-image">
+                                <h2 style="text-align: left;">Three Wheeler Hybrid Car</h2>
+                                <img class="img-fluid rounded shake preview-image"  src="img/car1.jpg" alt="Three Wheeler Hybrid Car Side">
+                            </div>
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/car2.jpg" alt="Three Wheeler Hybrid Car Front">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Sathi.jpg" alt="Three Wheeler Hybrid Car">
+                                </div>
+                            </div>
+                            <p style="text-align: center;">Three Wheeler Hybrid Car</p>
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/wave1.jpg" alt="Three Wheeler Hybrid Car Front">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/wave2.jpg" alt="Three Wheeler Hybrid Car">
+                                </div>
+                            </div>
+                            <p style="text-align: center;">Wave Magazine, February 2019</p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="img/Video CAN-InfoTech.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p style="text-align: center;">CAN-InfoTech, 2019</p>
+                            <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                            <ul>
+                                <li style="text-align: justify;">Developed a versatile three-wheeler hybrid car capable of operating in both petrol and electric modes.</li>
+                                <li style="text-align: justify;">Integrated a 125cc 4-stroke bike engine alongside a 750W BLDC motor, allowing users to choose between traditional combustion power and eco-friendly electric propulsion based on preference and driving conditions.</li>
+                            </ul>
                         </div>
-                        <p style="text-align: center;">E-Bike</p>
-                        <div class="main-image" style="width: full; display: flex; align-items: center; justify-items: center;">
-                            <img class="img-fluid rounded shake preview-image"  src="img/bike/newspaper.jpg" alt="E-Bike">
-                        </div>
-                        <p style="text-align: center;">Rajdhani, 24 Jun 2017</p>
-                        <div class="video-container">
-                            <video controls >
-                                <source src="img/bike/WhatsApp Video 2024-05-20 at 16.04.49.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div style="text-align: center;"">
-                            <a href="https://www.youtube.com/watch?v=J2hBY7EWV_A&list=PLaFdG6FUHktbW0NTRYpxfnDKQVRCMYRUQ", target="_blank">Sagarmatha Tv, 23 Jun 2017</a>
-                        </div>
-                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
-                        <ul>
-                            <li style="text-align: justify;">Fabricated a robust chassis to ensure durability and safety, employing hands-on fabrication techniques.</li>
-                            <li style="text-align: justify;">Integrated a 48V 500W brushless hub motor and compatible controller, achieving smooth propulsion and enabling a top speed of 40 km/hr with a mileage of 40-60 km/hr.</li>
-                        </ul>
-                        <a href="https://sangalokhabar.com/6771?fbclid=IwZXh0bgNhZW0CMTEAAR36aUHk7YO3XYAAlhQCbeVjkvkpWEyfptLSTsi_ufBMSOHCeOYR7pCHUUI_aem_AXW6EwkMF-jncrRNFyHAPwGSBQR-gdSdUQ4BJCxBIrOm7snfQ--fzX6DCSdsHN6oBIcXYx79zhpDH6Hz8xL6v9fL" target="_blank" style="color: blue; margin-left: 15px;">Newspaper Sangalokhabar</a>
-                       
-                    </div> 
 
-
-                    <div class="infographic-container">
+                        <div class="infographic-container">
                         <div class="main-image">
                             <h2 style="text-align: left;">Go-Kart: FireBall 2.0</h2>
                             <img class="img-fluid rounded shake preview-image"  src="img/FireBall2.0/gokart2.jpg" alt="Go-Kart: FireBall 2.0">
@@ -579,8 +642,6 @@
                         <a href="img/Bamboo Panel Machine/BME_final_report_076bme004006011039finalreport1.pdf" target="_blank" style="color: blue; margin-left: 15px;">Click here to learn more</a>
                     </div>
 
-
-
                     <div class="infographic-container">
                         <div class="main-image">
                             <h2 style="text-align: left;">Go-Kart: FireBall</h2>
@@ -608,7 +669,7 @@
                             <li style="text-align: justify;">Constructed a high-performance go-kart tailored for racing purposes, equipped with a potent 180cc four-stroke bike engine.</li>
                             <li style="text-align: justify;">Achieved impressive speeds of upto 75 km/hr, showcasing superior acceleration and handling characteristics on the racetrack.</li>
                         </ul>
-                      <!--  <a href="youtube.com", style="color: blue; margin-left: 15px;">Click here to learn more</a>-->
+                      
                     </div>
 
                     <div class="infographic-container">
@@ -618,14 +679,7 @@
                         </div>
                         
                         <p style="text-align: center;">SuffoSafe</p>
-                        <!--
-                        <div class="video-container">
-                            <video controls>
-                                <source src="img/Dust Collector/Dustcollector vid.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <p style="text-align: center;">Dust Collector on action</p> -->
+                       
                         <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
                         <ul>
                             <li style="text-align: justify;">Led the fabrication of the conceptual design for SuffoSafe, a pioneering safety solution developed in response to a tragic incident involving suffocation in a non-ventilated bathroom.</li>
@@ -663,7 +717,7 @@
                             <li style="text-align: justify;">Constructed a go-kart for racing purposes, equipped with a 125cc four-stroke bike engine.</li>
                             <li style="text-align: justify;">Achieved speeds of upto 40 km/hr.</li>
                         </ul>
-                       <!-- <a href="youtube.com", style="color: blue; margin-left: 15px;">Click here to learn more</a> -->
+                       
                     </div>
 
 
@@ -694,7 +748,7 @@
                             <li style="text-align: justify;">Fabricated a small windmill designed for rooftop installation, capable of generating approximately 200W of power, contributing to sustainable energy solutions for buildings.</li>
                             <li style="text-align: justify;">Featured the windmill to rotate 360 degrees, allowing for automatic adjustment to the direction of wind flow. This feature ensures optimal wind capture and maximizes energy generation efficiency.</li>
                         </ul>
-                      <!--  <a href="youtube.com", style="color: blue; margin-left: 15px;">Click here to learn more</a>-->
+                    
                     </div>
 
 
@@ -745,79 +799,559 @@
                         </div>
                        
                     </div>
+                    </div>
+                </div>
+                <div id="design">
+                    <!-- Content for Design -->
+                    <h2>Design Projects</h2>
+                    <div id="design-content">
+                        
+                        <div style="" class="infographic-container">
+                            <div class="main-image">
+                                <h2 style="text-align: left;">Coldstore</h2>
+                                <img class="img-fluid rounded shake preview-image"  src="img/Coldstore/1.png" alt="CAD isometric view">
+                            </div>
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Coldstore/excel1.png" alt="load calculation">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Coldstore/boq1.png" alt="boq">
+                                </div>
+                            </div>
+                            
+                            <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                            <ul>
+                                <li style="text-align: justify;">Designed a seed potato cold store with a focus on maintaining optimal storage conditions through calculations of cooling loads, accounting for insulation, ambient temperature, desired storage temperature and humudity.</li>
+                                <li style="text-align: justify;">The refrigerated equipment was chosen based on the estimated cooling load and storage requirements, with an emphasis on energy efficiency and efficient temperature control to preserve seed potatoes.</li>
+                            </ul>
+                            <a href="img/Coldstore/Cold-store-load-calculationV1.xlsx" target="_blank" style="color: blue; margin-left: 15px;">Load Calculation and BOQ</a>
+                            <div></div>
+                            <a href="img/Coldstore/Chishyan Kendra.dwg" target="_blank" style="color: blue; margin-left: 15px;">CAD Drawing</a>
+                            <div></div>
+                            <a href="img/Coldstore/coldstore.pdf" target="_blank" style="color: blue; margin-left: 15px;">Report</a>
+                        </div>
+    
+                        <div class="infographic-container">
+                            <div class="main-image">
+                                <h2 style="text-align: left;">Firefighting System</h2>
+                                <img class="img-fluid rounded shake preview-image"  src="img/Firefighting system/cad.png" alt="sprinkler system">
+                            </div>
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Firefighting system/excel photo.png" alt="load calculation">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Firefighting system/boq.png" alt="boq">
+                                </div>
+                            </div>
+                            
+                            <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                            <ul>
+                                <li style="text-align: justify;">Designed a comprehensive firefighting system for the building, incorporating both fire sprinklers and fire hydrant standpipes strategically positioned for maximum coverage and efficiency in suppressing fires.</li>
+                                <li style="text-align: justify;">Conducted hydraulic calculations to optimize water distribution and pressure within the fire sprinkler and hydrant standpipe systems</li>
+                            </ul>
+                            <a href="img/Firefighting system/Sprinkler Hydraulic calculation for Ordinary Hazard-1 for video (3) (4).xlsx" target="_blank" style="color: blue; margin-left: 15px;">Load Calculations</a>
+                            <div></div>
+                            <a href="img/Firefighting system/Drawing1.dwg" target="_blank" style="color: blue; margin-left: 15px;">CAD Drawing</a>
+                            <div></div>
+                            <a href="img/Firefighting system/report.pdf" target="_blank" style="color: blue; margin-left: 15px;">Report</a>
+                        </div>
+    
+    
+                        <div class="infographic-container">
+                            <div class="main-image">
+                                <h2 style="text-align: left;">Air Conditioning: Cooling Load Calculation</h2>
+                                <img class="img-fluid rounded shake preview-image"  src="img/Air Conditioner/1.png" alt="CAD drawing">
+                            </div>
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Air Conditioner/2.png" alt="load calculation">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Air Conditioner/3.png" alt="load calculation">
+                                </div>
+                            </div>
+                            
+                            <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                            <ul>
+                                <li style="text-align: justify;">Conducted comprehensive calculations to assess the heating load of the building, considering factors such as insulation, ambient temperature, and desired room temperature.</li>
+                                <li style="text-align: justify;">Plan layout of split AC system in multistory building.</li>
+                            </ul>
+                            <a href="img/Air Conditioner/CLTD calculation.xlsx" target="_blank" style="color: blue; margin-left: 15px;">Load Calculation</a>
+                            <div></div>
+                            <a href="img/Air Conditioner/detail plan.dwg" target="_blank" style="color: blue; margin-left: 15px;">CAD Drawing</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            document.getElementById('all-projects-link').addEventListener('click', function(event) {
+                event.preventDefault();
+                setActiveProjectSection('all-projects');
+            });
+    
+            document.getElementById('fabricated-link').addEventListener('click', function(event) {
+                event.preventDefault();
+                setActiveProjectSection('fabricated');
+            });
+    
+            document.getElementById('design-link').addEventListener('click', function(event) {
+                event.preventDefault();
+                setActiveProjectSection('design');
+            });
+    
+            function setActiveProjectSection(sectionId) {
+                // Remove active class from all links
+                document.querySelectorAll('.project-nav a').forEach(link => {
+                    link.classList.remove('active-project');
+                });
+    
+                // Add active class to clicked link
+                document.getElementById(sectionId + '-link').classList.add('active-project');
+    
+                // Hide all content sections
+                document.querySelectorAll('.project-content > div').forEach(section => {
+                    section.classList.remove('active-project');
+                });
+    
+                // Show the active content section
+                document.getElementById(sectionId).classList.add('active-project');
+    
+                // Populate All Projects section with content from other sections
+                if (sectionId === 'all-projects') {
+                    const allProjectsContent = document.getElementById('all-projects-content');
+                    const fabricatedContent = document.getElementById('fabricated-content').innerHTML;
+                    const designContent = document.getElementById('design-content').innerHTML;
+                    
+                    allProjectsContent.innerHTML = fabricatedContent + designContent;
+                }
+            }
+    
+            // Initial population of All Projects section
+            setActiveProjectSection('all-projects');
+        </script>
+    </body>
+</div>
+    </html>
+    
+    <!-- Projects Start
+    <div class="container-xxl py-6 pt-5" id="project">
+        <div class="container"> -->
+            <!-- <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">My Projects</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+                        <li class="mx-3 active" data-filter="*">All Projects</li>
+                        <li class="mx-3" data-filter=".first">Fabricated</li>
+                        <li class="mx-3" data-filter=".second">Design</li>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+                
+                <div class="col-lg-12 col-md-6 mx-auto portfolio-item first"> -->
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">E-Bike</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-Photo-3-Dhankuta.jpg" alt="E-Bike">
+                        </div>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-baba.jpg" alt="Three Wheeler Hybrid Car Front">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-mummy1.jpg" alt="Three Wheeler Hybrid Car">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">E-Bike</p>
+                        <div class="main-image" style="width: full; display: flex; align-items: center; justify-items: center;">
+                            <img class="img-fluid rounded shake preview-image"  src="img/bike/newspaper.jpg" alt="E-Bike">
+                        </div>
+                        <p style="text-align: center;">Rajdhani, 24 Jun 2017</p>
+                        <div class="video-container">
+                            <video controls >
+                                <source src="img/bike/WhatsApp Video 2024-05-20 at 16.04.49.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div style="text-align: center;"">
+                            <a href="https://www.youtube.com/watch?v=J2hBY7EWV_A&list=PLaFdG6FUHktbW0NTRYpxfnDKQVRCMYRUQ", target="_blank">Sagarmatha Tv, 23 Jun 2017</a>
+                        </div>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Fabricated a robust chassis to ensure durability and safety, employing hands-on fabrication techniques.</li>
+                            <li style="text-align: justify;">Integrated a 48V 500W brushless hub motor and compatible controller, achieving smooth propulsion and enabling a top speed of 40 km/hr with a mileage of 40-60 km/hr.</li>
+                        </ul>
+                        <a href="https://sangalokhabar.com/6771?fbclid=IwZXh0bgNhZW0CMTEAAR36aUHk7YO3XYAAlhQCbeVjkvkpWEyfptLSTsi_ufBMSOHCeOYR7pCHUUI_aem_AXW6EwkMF-jncrRNFyHAPwGSBQR-gdSdUQ4BJCxBIrOm7snfQ--fzX6DCSdsHN6oBIcXYx79zhpDH6Hz8xL6v9fL" target="_blank" style="color: blue; margin-left: 15px;">Newspaper Sangalokhabar</a>
+                       
+                    </div>  -->
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Three Wheeler Hybrid Car</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/car1.jpg" alt="Three Wheeler Hybrid Car Side">
+                        </div>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/car2.jpg" alt="Three Wheeler Hybrid Car Front">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Sathi.jpg" alt="Three Wheeler Hybrid Car">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">Three Wheeler Hybrid Car</p>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/wave1.jpg" alt="Three Wheeler Hybrid Car Front">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/wave2.jpg" alt="Three Wheeler Hybrid Car">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">Wave Magazine, February 2019</p>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="img/Video CAN-InfoTech.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p style="text-align: center;">CAN-InfoTech, 2019</p>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Developed a versatile three-wheeler hybrid car capable of operating in both petrol and electric modes.</li>
+                            <li style="text-align: justify;">Integrated a 125cc 4-stroke bike engine alongside a 750W BLDC motor, allowing users to choose between traditional combustion power and eco-friendly electric propulsion based on preference and driving conditions.</li>
+                        </ul>
+                    </div> -->
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Go-Kart: FireBall 2.0</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/FireBall2.0/gokart2.jpg" alt="Go-Kart: FireBall 2.0">
+                        </div>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/FireBall2.0/cad.jpg" alt="FireBall CAD">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/FireBall2.0/chassis.jpg" alt="Gokart Chassis">
+                            </div>
+                        </div>
+                    
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/FireBall2.0/gokart1123.jpg" alt="FireBall 2.0">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/FireBall2.0/WhatsApp Image 2024-05-20 at 19.05.08.jpeg" alt="FireBall 2.0">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">FireBall 2.0</p>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="img/FireBall2.0/WhatsApp Video 2024-05-20 at 19.05.25.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p style="text-align: center;">Drift</p>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Led the comprehensive design, analysis, and fabrication of a racing go-kart tailored for high-performance applications.</li>
+                            <li style="text-align: justify;">Engineered the go-kart chassis to accommodate a potent 150cc four-stroke bike engine, enabling impressive top speeds of upto 85 km/hr.</li>
+                            <li style="text-align: justify;">Incorporated with adjustable camber angle functionality, allowing for precise customization of the camber angle within a range of 15 degrees to optimize handling and facilitate smooth turning on the racetrack.</li>
+                            <li style="text-align: justify;">Implemented a chain adjustment feature to ensure optimal chain tension and transmission efficiency, enhancing overall performance and reliability during racing competitions.</li>
+                        </ul>
+                    </div> -->
+
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Bamboo Panel Manufacturing Machine</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/Bamboo Panel Machine/Bamboo 1.jpg" alt="Bamboo Panel Manufacturing Machine">
+                        </div>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Bamboo Panel Machine/Bamboo 2.jpg" alt="Bamboo Panel Manufacturing Machine">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Bamboo Panel Machine/Bamboo3.png" alt="Bamboo Panel Manufacturing Machine">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">Bamboo Panel Manufacturing Machine</p>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Bamboo Panel Machine/Bamboo 4.jpg" alt="Fabricated Panel">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Bamboo Panel Machine/Bamboo 5.jpg" alt="UTM Testing">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">Fabricated Panel and Testing</p>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="img/Bamboo Panel Machine/Bamboo video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p style="text-align: center;">Working</p>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Developed and constructed a specialized manufacturing machine for bamboo panel production, featuring automated adhesive application, mat formation, and hydraulic pressing with integrated heating elements.</li>
+                            <li style="text-align: justify;">Conducted thorough strength testing to assess the structural integrity, durability, and versatility of the bamboo panels for diverse applications.</li>
+                        </ul>
+                        <a href="img/Bamboo Panel Machine/BME_final_report_076bme004006011039finalreport1.pdf" target="_blank" style="color: blue; margin-left: 15px;">Click here to learn more</a>
+                    </div> -->
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Go-Kart: FireBall</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/Go-Kart/Go-kart 1.jpg" alt="Go-Kart: FireBall">
+                        </div>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/FireBall/fireball 2.jpg" alt="Go-Kart: FireBall">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/FireBall/fireball 3.jpg" alt="Go-Kart: FireBall">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">Go-Kart: FireBall</p>
+                        
+                        <div class="video-container">
+                            <video controls>
+                                <source src="img/FireBall/vid.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p style="text-align: center;">Testing</p>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Constructed a high-performance go-kart tailored for racing purposes, equipped with a potent 180cc four-stroke bike engine.</li>
+                            <li style="text-align: justify;">Achieved impressive speeds of upto 75 km/hr, showcasing superior acceleration and handling characteristics on the racetrack.</li>
+                        </ul>
+                      
+                    </div> -->
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">SuffoSafe: Automatic Bathroom Smoke Evacuation System</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/SuffoSafe/Screenshot 2024-02-13 211357.png" alt="SuffoSafe">
+                        </div>
+                        
+                        <p style="text-align: center;">SuffoSafe</p>
+                       
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Led the fabrication of the conceptual design for SuffoSafe, a pioneering safety solution developed in response to a tragic incident involving suffocation in a non-ventilated bathroom.</li>
+                            <li style="text-align: justify;">SuffoSafe kicks into action when it senses too much smoke, quickly getting rid of it to keep people safe.</li>
+                            <li style="text-align: justify;">It's aim is to make bathrooms safer by stopping suffocation accidents caused by poor ventilation.</li>
+                    
+                        </ul>
+                       
+                    </div> -->
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Go-Kart</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/Go-Kart/Go-kart 1.jpg" alt="Go-Kart">
+                        </div>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Go-Kart/Go-Kart 2.jpg" alt="Go-Kart">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Go-Kart/Go-Kart 3.jpg" alt="Go-Kart">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">Go-Kart</p>
+                        
+                        <div class="video-container">
+                            <video controls>
+                                <source src="img/Go-Kart/Go-kart vid.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p style="text-align: center;">Testing</p>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Constructed a go-kart for racing purposes, equipped with a 125cc four-stroke bike engine.</li>
+                            <li style="text-align: justify;">Achieved speeds of upto 40 km/hr.</li>
+                        </ul>
+                       
+                    </div> -->
+
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Rooftop Windmill</h2>
+                        </div>    
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                            
+                            <img class="img-fluid rounded shake preview-image"  src="img/Windmill/windmill 1.jpg" alt="Windmill"> 
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Windmill/IMG_20211202_155903_5.jpg" alt="Windmill">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">Windmill, Dhankuta</p>
+                        
+                        <div class="video-container">
+                            <video controls style="height: 700px;">
+                                <source src="img/Windmill/VID_20211202_155914.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p style="text-align: center;">Windmill</p>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Fabricated a small windmill designed for rooftop installation, capable of generating approximately 200W of power, contributing to sustainable energy solutions for buildings.</li>
+                            <li style="text-align: justify;">Featured the windmill to rotate 360 degrees, allowing for automatic adjustment to the direction of wind flow. This feature ensures optimal wind capture and maximizes energy generation efficiency.</li>
+                        </ul>
+                    
+                    </div> -->
+
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Conceptual Prototype Development of Vehicle-Mounted Dust Collector</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/Dust Collector/Dustcollector 1.png" alt="Dust Collector">
+                        </div>
+                        
+                        <p style="text-align: center;">Dust Collector</p>
+                        
+                        <div class="video-container">
+                            <video controls>
+                                <source src="img/Dust Collector/Dustcollector vid.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p style="text-align: center;">Dust Collector on action</p>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Developed a conceptual prototype of a dust collector system integrated into a vehicle, utilizing the vehicle's power to collect dust from highway roads.</li>
+                            <li style="text-align: justify;">Integrated the dust collector with the vehicle's power system, enabling the use of the vehicle's engine to operate the suction mechanism and ensure continuous dust collection during road cleaning operations.</li>
+                        </ul>
+                       
+                    </div> -->
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Junk Art: "Knowledge Over Power"</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/Junk Art/IMG_20230110_150150_1.jpg" alt="Junk Art">
+                        </div>
+                        
+                        <p style="text-align: center;">Junk Art: "Knowledge Over Power"</p>
+                    
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Designed and constructed a junk art sculpture titled "Knowledge Over Power," using mechanical junk to symbolize the theme that knowledge is greater than power.</li>
+                            <li style="text-align: justify;">Collaboratively collected and repurposed mechanical components to create an art piece. The sculpture combines various elements to represent the balance and interplay between knowledge and power.</li>
+                    
+                        </ul>
+                       
+                    </div> -->
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Minor Projects</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/minor project.png" alt="Junk Art">
+                        </div>
+                       
+                    </div> -->
                     <!-- overlap margin set-->
-    <!-- <style>
-        .responsive-margin {
-            margin-bottom: 12px; /* Default margin for small screens */
-        }
-
-        /* Mobile S */
-        @media screen and (min-width: 320px) {
-            .responsive-margin {
-                margin-bottom: 12px;
-            }
-        }
-
-        /* Mobile M */
-        @media screen and (min-width: 375px) {
-            .responsive-margin {
-                margin-bottom: 20px;
-            }
-        }
-
-        /* Mobile L */
-        @media screen and (min-width: 425px) {
-            .responsive-margin {
-                margin-bottom: 30px;
-            }
-        }
-
-        /* Tablet */
-        @media screen and (min-width: 768px) {
-            .responsive-margin {
-                margin-bottom: 7px;
-            }
-        }
-
-        /* Laptop 1024px */
-        @media screen and (min-width: 1024px) {
-            .responsive-margin {
-                margin-bottom: 300px;
-            }
-        }
-
-        /* Laptop 1440px */
-        @media screen and (min-width: 1440px) {
-            .responsive-margin {
-                margin-bottom: 500px;
-            }
-        }
-
-        /* 4K */
-        @media screen and (min-width: 2560px) {
-            .responsive-margin {
-                margin-bottom: 750px;
-            }
-        }
-
-        /* Large screens (for consistency) */
-        @media screen and (min-width: 750px) {
-            .responsive-margin {
-                margin-bottom: 750px;
-            }
-        }
-    </style> -->
-    <div class="responsive-margin"></div>
+    
+            </div>
+    <!-- <div class="responsive-margin"></div> -->
 <!--overlap margin set end-->
               
             
                 
                 
                 <!-- Add more portfolio items as needed -->
-                
-<!-- 
-                <div class="col-lg-12 col-md-6 mx-auto portfolio-item second"> -->
-                    <div class="infographic-container">
+                <!-- <style>
+                    .infographic-container {
+                        margin-top: 400px;
+                    }
+            
+                    /* Small devices (phones, less than 576px) */
+        
+            
+                    /* Extra extra large devices (larger desktops, 1200px and up) */
+                    /* @media (min-width: 2000px) {
+                        .infographic-container {
+                            margin-top: 200px;
+                        }
+                    } */
+
+
+      
+
+        Extra small devices (phones, less than 576px)
+        @media (max-width: 575.98px) {
+            .infographic-container {
+                margin-top: 200px;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 576px and up) */
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .infographic-container {
+                margin-top: 250px;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .infographic-container {
+                margin-top: 300px;
+            }
+        }
+
+        /* Large devices (desktops, 992px and up) */
+   
+
+        /* Extra large devices (large desktops, 1200px and up) */
+        @media (min-width: 300px) and (max-width: 500px) {
+            .infographic-container {
+                margin-top: 610px ;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 800px) {
+            .infographic-container {
+                margin-top: 105px;
+            }
+        }
+
+        /* Extra extra large devices (larger desktops, 1600px and up) */
+        @media (min-width: 800px) and (max-width: 1999.98px) {
+            .infographic-container {
+                margin-top: 300px;
+            }
+        }
+
+        /* Very large devices (very large desktops, 2000px and up) */
+        @media (min-width: 2000px) {
+            .infographic-container {
+                margin-top: 200px;
+            }
+        }
+
+        .infographic-container {
+                margin-top: 400px;
+            }
+
+              
+                </style> -->
+
+                <!-- <div class="col-lg-12 col-md-6 mx-auto portfolio-item second">
+                    <div style="" class="infographic-container">
                         <div class="main-image">
                             <h2 style="text-align: left;">Coldstore</h2>
                             <img class="img-fluid rounded shake preview-image"  src="img/Coldstore/1.png" alt="CAD isometric view">
@@ -897,11 +1431,12 @@
 
                 </div>
             
-        <!-- </div>
+        </div> -->
+        
+            <!-- </div> -->
+        
+    <!-- </div>
     </div> -->
-    </div>
-    
-
 
       <!--Education Start-->
       <div class="container-xxl py-6 pb-5" id="education">
